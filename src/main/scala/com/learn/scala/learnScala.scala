@@ -8,5 +8,8 @@ package com.learn.scala
   * desc：学习 scala 的 demo
   */
 object learnScala {
+  def main(args: Array[String]): Unit = {
+
+  }
 
 }
