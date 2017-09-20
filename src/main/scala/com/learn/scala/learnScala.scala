@@ -10,6 +10,12 @@ package com.learn.scala
 object learnScala {
   def main(args: Array[String]): Unit = {
 
+    var x = 30
+    if (x > 20)
+      print("我爱你")
+    else
+      print("哈哈哈")
+
   }
 
 }
