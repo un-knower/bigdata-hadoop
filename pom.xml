@@ -133,6 +133,14 @@
             <version>0.9.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.nd4j/canova-api -->
+        <dependency>
+            <groupId>org.nd4j</groupId>
+            <artifactId>canova-api</artifactId>
+            <version>0.0.0.17</version>
+        </dependency>
+
+
 
 
     </dependencies>
