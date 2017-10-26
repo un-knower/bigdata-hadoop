@@ -5,7 +5,7 @@ import redis.clients.jedis.Jedis;
 /**
  * Created by charles on 2017/7/2.
  */
-public class RedisJava {
+public class Redis {
     static String constr = "192.168.64.131" ;
     public static Jedis getRedis(){
         Jedis jedis = new Jedis(constr) ;
@@ -13,7 +13,7 @@ public class RedisJava {
         return jedis ;
     }
     public static void main(String[] args){
-        Jedis j = RedisJava. getRedis() ;
+        Jedis j = Redis. getRedis() ;
         String output ;
         j.set( "hello", "world" ) ;
         output = j.get( "hello") ;
