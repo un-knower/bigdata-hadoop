@@ -30,12 +30,12 @@ public class DoubanFileDataModel extends FileDataModel{
         super(datafile, delimiterRegex);
     }
 
-    public DoubanFileDataModel(File datafile, boolean transpose, long minReloadIntervalMS) throws IOException {
-        super(datafile, transpose, minReloadIntervalMS);
+    public DoubanFileDataModel(File dataFile, boolean transpose, long minReloadIntervalMS) throws IOException {
+        super(dataFile, transpose, minReloadIntervalMS);
     }
 
-    public DoubanFileDataModel(File datafile, boolean transpose, long minReloadIntervalMS, String delemiterRegex) throws IOException {
-        super(datafile, transpose, minReloadIntervalMS, delemiterRegex);
+    public DoubanFileDataModel(File dataFile, boolean transpose, long minReloadIntervalMS, String delemiterRegex) throws IOException {
+        super(dataFile, transpose, minReloadIntervalMS, delemiterRegex);
     }
 
     protected long readUserIDFromString(String value){
@@ -51,7 +51,7 @@ public class DoubanFileDataModel extends FileDataModel{
 
     protected long readItemIDFromString(String value){
         value = value.trim();
-        return super.readItemIDFromString(value);     //?
+        return super.readItemIDFromString(value);     //重写父类
     }
     protected void processLine(String line, FastByIDMap<?> data, FastByIDMap<FastByIDMap<Long>> timestamps, boolean fromPriorData){
         String[] fields = line.split(",");
