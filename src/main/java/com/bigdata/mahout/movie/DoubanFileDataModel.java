@@ -13,6 +13,7 @@ import java.util.Map;
  * Created by Administrator on 2017/11/3.
  * Author：charlesXu
  * file: DoubanFileDataModel.java
+ * desc: 数据处理，建立两张表的关联关系
  * time: 2017/11/03
  */
 public class DoubanFileDataModel extends FileDataModel{
