@@ -10,7 +10,7 @@ import java.sql.*;
  * java远程操作hive
  * https://www.cnblogs.com/liumingyi/p/5955670.html
  */
-public class TestHive {
+public class TestToHive {
     private Connection connection;
     private PreparedStatement ps;
     private ResultSet rs;
