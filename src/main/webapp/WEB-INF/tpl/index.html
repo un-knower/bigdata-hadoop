@@ -1,0 +1,74 @@
+<script type="text/javascript" src="$!rc.contextPath/static/js/echarts.js"></script>
+<script type="text/javascript" src="$!rc.contextPath/static/html/overview/index.js"></script>
+
+<div class="wrapper-content">
+    ##	<div class="title-bar">总览<div></div></div>
+    <div class="block-content block-content2">
+        <div class="title"><i class="icon icon3"></i>待办事项</div>
+        <div class="content">
+            <ul>
+                <li data-nav="nav02" onclick="jump()"><em class="icon"></em><a href="javascript:void(0)">待审核店铺</a><i>$!{countInfo.pendCount}</i></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="block-content">
+        <div class="title"><i class="icon icon1"></i>数据统计</div>
+        <div class="content">
+            <div class="detail-content detail-content1">
+                <div class="title"></div>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <div class="title-bar"><div class="title">已入驻店铺</div></div>
+                            <div class="content"><i>$!{countInfo.shopCount}</i>个</div>
+                        </li>
+                        <li>
+                            <div class="title-bar"><div class="title">已发布解决方案</div></div>
+                            <div class="content"><i class="i2">$!{countInfo.cmsCount}</i>个</div>
+                        </li>
+                        <li>
+                            <div class="title-bar"><div class="title">已发布产品</div></div>
+                            <div class="content"><i class="i3">$!{countInfo.pdtCount}</i>个</div>
+                        </li>
+                        <li>
+                            <div class="title-bar"><div class="title">已产生联系单</div></div>
+                            <div class="content"><i class="i4">$!{countInfo.orderCount}</i>个</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+	function jump(){
+
+		//if(pendCount > 0){  //如果有待审核店铺，点击待审核店铺区域就会跳转到店铺管理
+		var obj=$("span[data-href='$!rc.contextPath/shopManage/init']");
+		obj.attr("data-href","$!rc.contextPath/shopManage/init?websiteStatus=1");
+		obj.click();
+		obj.attr("data-href","$!rc.contextPath/shopManage/init");
+
+	}
+
+	$(document).ready(function(){
+
+
+
+	})
+
+
+
+
+
+
+
+
+
+
+</script>
